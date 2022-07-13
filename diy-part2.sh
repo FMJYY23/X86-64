@@ -11,4 +11,20 @@
 #
 
 # Modify default IP
-#sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.1.2/g' package/base-files/files/bin/config_generate
+
+rm -rf  feeds/luci/themes/luci-theme-argon
+
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
+
+sed -i '/uci commit system/i\uci set system.@system[0].hostname='X86'' package/lean/default-settings/files/zzz-default-settings
+
+sed -i "s/OpenWrt /OPWRT/g" package/lean/default-settings/files/zzz-default-settings
+
+sed -i 's/R22.7.7/18.06 Pro/g' package/lean/default-settings/files/zzz-default-settings
+
+sed -i 's/"Frp 内网穿透"/"超级服务器外网穿透设置"/g' feeds/luci/applications/luci-app-frpc/po/zh-cn/frp.po
+
+sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' feeds/luci/applications/luci-app-turboacc/po/zh-cn/turboacc.po
+
+git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/lean/luci-app-unblockneteasemusic
