@@ -25,6 +25,4 @@ sed -i 's/R22.8.2/Pro 22.10.1/g' package/lean/default-settings/files/zzz-default
 
 sed -i 's/"Frp 内网穿透"/"超级服务器外网穿透设置"/g' feeds/luci/applications/luci-app-frpc/po/zh-cn/frp.po
 
-sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' feeds/luci/applications/luci-app-turboacc/po/zh-cn/turboacc.po
-
 git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/lean/luci-app-unblockneteasemusic
