@@ -23,4 +23,6 @@ sed -i "s/OpenWrt /OPWRT/g" package/lean/default-settings/files/zzz-default-sett
 
 sed -i 's/R22.9.1/Pro 22.10.1/g' package/lean/default-settings/files/zzz-default-settings
 
+sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' feeds/luci/applications/luci-app-turboacc/po/zh-cn/turboacc.po
+
 git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/lean/luci-app-unblockneteasemusic
