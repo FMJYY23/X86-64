@@ -25,6 +25,6 @@ sed -i 's/R22.9.1/Pro 22.10.10/g' package/lean/default-settings/files/zzz-defaul
 
 sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' feeds/luci/applications/luci-app-turboacc/po/zh-cn/turboacc.po
 
-sed -i 's/KERNEL_PATCHVER:=5.5/KERNEL_PATCHVER:=6.0/g' target/linux/x86/Makefile
+sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=6.0/g' target/linux/x86/Makefile
 
 git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/lean/luci-app-unblockneteasemusic
