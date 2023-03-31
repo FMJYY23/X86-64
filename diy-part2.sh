@@ -21,7 +21,7 @@ sed -i '/uci commit system/i\uci set system.@system[0].hostname='X86'' package/l
 
 sed -i "s/OpenWrt /OPWRT/g" package/lean/default-settings/files/zzz-default-settings
 
-sed -i 's/R23.3.3/Pro 2023/g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's/R23.4.1/Pro 2023/g' package/lean/default-settings/files/zzz-default-settings
 
 sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' feeds/luci/applications/luci-app-turboacc/po/zh-cn/turboacc.po
 
