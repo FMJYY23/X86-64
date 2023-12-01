@@ -19,7 +19,7 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lea
 
 sed -i '/uci commit system/i\uci set system.@system[0].hostname='PandoraBox'' package/lean/default-settings/files/zzz-default-settings
 
-sed -i "s/OpenWrt /Lean OS/g" package/lean/default-settings/files/zzz-default-settings
+sed -i "s/OpenWrt /OPWRT/g" package/lean/default-settings/files/zzz-default-settings
 
 sed -i 's/R23.11.11/2023/g' package/lean/default-settings/files/zzz-default-settings
 
