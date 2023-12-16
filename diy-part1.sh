@@ -15,6 +15,6 @@
 
 # Add a feed source
 
-#sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
+sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
 
-git clone --depth=1 -b main https://github.com/fw876/helloworld package/helloworld
+#git clone --depth=1 -b main https://github.com/fw876/helloworld package/helloworld
