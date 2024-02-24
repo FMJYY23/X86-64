@@ -25,4 +25,6 @@ sed -i 's/R24.2.2/SVIP/g' package/lean/default-settings/files/zzz-default-settin
 
 sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' feeds/luci/applications/luci-app-turboacc/po/zh-cn/turboacc.po
 
+sed -i 's/iperf3-ssl[[:space:]]*//g' openwrt/target/linux/x86/Makefile
+
 git clone --branch master https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/lean/luci-app-unblockneteasemusic
